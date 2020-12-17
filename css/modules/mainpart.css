@@ -1,0 +1,109 @@
+main {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    z-index: 3;
+    width: 100%;
+    background-color: rgba(219, 219, 219, .5);
+    padding: 10px;
+}
+
+h1 {
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+}
+h1 span{
+    padding: 0 var(--gutter);
+}
+h1 span::before {
+    content: "";
+    width: 165px;
+    height: 165px;
+    top: -55px;
+    position: absolute;
+    background-color: var(--light-back);
+    border-radius: 50%;
+    z-index: -1;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0 3px var(--font-color);
+}
+
+/* slider */
+.pictures {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+}
+.picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: animal-slide 15s linear 0s infinite;
+}
+.pic1 { 
+    background-image: url(https://i.picsum.photos/id/1020/4288/2848.jpg?hmac=Jo3ofatg0fee3HGOliAIIkcg4KGXC8UOTO1dm5qIIPc) ;
+    animation-delay: 0s;
+}
+.pic2 { 
+    background-image: url(https://i.picsum.photos/id/1074/5472/3648.jpg?hmac=w-Fbv9bl0KpEUgZugbsiGk3Y2-LGAuiLZOYsRk0zo4A) ;
+    animation-delay: 3s;
+}
+.pic3 { 
+    background-image: url(https://i.picsum.photos/id/1084/4579/3271.jpg?hmac=YblMazviSugJVfZsFPaFI_Vp6lBeQin62qpm8rxHruo) ;
+    animation-delay: 6s;
+}
+.pic4 { 
+    background-image: url(https://i.picsum.photos/id/1024/1920/1280.jpg?hmac=-PIpG7j_fRwN8Qtfnsc3M8-kC3yb0XYOBfVzlPSuVII) ;
+    animation-delay: 9s;
+}
+.pic5 { 
+    background-image: url(https://i.picsum.photos/id/200/1920/1280.jpg?hmac=-eKjMC8-UrbLMpy1A4OWrK0feVPB3Ka5KNOGibQzpRU) ;
+    animation-delay: 12s;
+}
+
+@keyframes animal-slide {
+   0% { opacity: .7; }
+   20% {
+       opacity: .7;
+       width: 105%;
+       height: 105%;
+   }
+   23% {
+       opacity: 0;
+   }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .title {
+        background-color: transparent;
+    }
+    h1 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center; 
+    }
+    h1 span {
+        padding: var(--gutter) 0;
+    }
+    h1 span::before {
+        /* top: -55px; */
+        top: 0px;
+    }
+    .picture {
+        background-position: center;
+    }
+}

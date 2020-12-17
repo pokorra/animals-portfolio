@@ -43,7 +43,7 @@ nav {
     width: 40px;
     height: var(--gutter);
     background-color: #ffffff;
-    z-index: 5;
+    z-index: 8;
 }
 
 .line {
@@ -68,7 +68,6 @@ nav {
 
 .show-menu .line-3 {
     transform: rotate(45deg);
-    /* top: 15px; */
     transform-origin: right bottom;
 }
 
@@ -81,4 +80,41 @@ nav {
 @keyframes opacity {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@media only screen and (max-width: 650px) {
+    #menu {
+        transition: none;
+    }
+    #menu.hidden {
+        display: none;
+    }
+    #menu.open {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding-top: var(--gutter);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        z-index: 7;
+    }
+    .menu-item {
+        margin: var(--gutter) auto 0;
+        font-size: 20px;
+        width: 50%;
+    }
+    .menu-item:last-child {
+        margin: var(--gutter) auto 0;
+    }
+
+    #hamburger.show-menu {
+        position: fixed;
+        top: var(--gutter);
+        right: var(--gutter);
+    }
+
 }
