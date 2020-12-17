@@ -1,0 +1,6 @@
+.social-media a {
+    margin-right: 10px;
+}
+.social-media a:hover {
+    opacity: .8;
+}

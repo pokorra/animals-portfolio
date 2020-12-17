@@ -1,0 +1,9 @@
+:root {
+    --font-color: #383838;
+    --second-color: #82837c;
+    --light-back: #dbdbdb;
+    --warmer-back: #d8bc89;
+
+    --gutter: 30px;
+    --font-size: 16px;
+}

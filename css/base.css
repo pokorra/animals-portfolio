@@ -1,3 +1,39 @@
+@import url(reset.css);
+
 * {
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: var(--font-color);
+    font-size: var(--font-size);
+    transition: transform .4s;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+button:hover {
+    background: transparent;
+}
+
+h1, h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.smaller-txt {
+    font-size: 14px;
 }

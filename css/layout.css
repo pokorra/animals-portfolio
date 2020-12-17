@@ -1,0 +1,13 @@
+.main-container {
+    width: 90vw;
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--gutter) 0;
+}
