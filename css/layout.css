@@ -2,12 +2,43 @@
     width: 90vw;
     max-width: 1100px;
     margin: 0 auto;
-
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--gutter) 0;
+    margin: var(--gutter) auto;
+    width: 90vw;
+    border: 1px solid seagreen;
+    /* position: fixed; */
+    z-index: 3;
+}
+
+.main {
+    height: 60vh;
+    /* margin-top: 80px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sec-about {
+    /* height: 65vh; */
+    margin-top: 100px;
+}
+
+
+/* @media only screen and (max-width: 1100px) {
+    .about {
+
+    }
+} */
+
+@media only screen and (max-width: 650px) {
+    .sec-about {
+        height: 60vh;
+        margin-top: 60px;
+    }
 }

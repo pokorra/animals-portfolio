@@ -42,7 +42,7 @@ nav {
     justify-self: end;
     width: 40px;
     height: var(--gutter);
-    background-color: #ffffff;
+    background-color: transparent;
     z-index: 8;
 }
 
