@@ -3,7 +3,7 @@
 .title {
     z-index: 3;
     width: 100%;
-    background-color: rgba(219, 219, 219, .5);
+    background-color: var(--half-transparent);
     padding: 10px;
 }
 

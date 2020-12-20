@@ -5,6 +5,7 @@
     font-family: 'Lato', sans-serif;
     color: var(--font-color);
     font-size: var(--font-size);
+    line-height: 22px;
 }
 
 body {
