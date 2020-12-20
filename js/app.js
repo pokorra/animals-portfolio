@@ -32,16 +32,3 @@ menu.addEventListener("click", e => {
         noScrolling();
     }
 })
-
-//animating grid items
-
-
-// gridCards.map(gridCard => ({
-//     animateCSSGrid.wrapGrid(gridCard, {
-//         duration: 600,
-//         onStart: gridCard =>
-//             console.log('starcik'),
-//         onEnd: gridCard => 
-//             console.log('finisz')
-//         });
-// }))

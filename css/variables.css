@@ -1,8 +1,9 @@
 :root {
-    --font-color: #383838;
-    --second-color: #82837c;
-    --light-back: #dbdbdb;
-    --warmer-back: #d8bc89;
+    --font-color: rgb(56, 56, 56);
+    --second-color: rgb(130, 131, 124);
+    --light-back: rgb(219, 219, 219);
+    --warmer-back: rgb(216, 188, 137);
+    --half-transparent: rgba(219, 219, 219, .5);
 
     --gutter: 30px;
     --font-size: 16px;

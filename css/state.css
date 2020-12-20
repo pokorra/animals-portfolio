@@ -2,3 +2,10 @@
 .block {
     position: fixed;
 }
+
+/* unhiding text inside of grid elements */
+.unhide {
+    display: block;
+    visibility: hidden;
+    animation: showDesc 1s linear forwards;
+}

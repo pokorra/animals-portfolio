@@ -43,27 +43,29 @@ h1 span::before {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 0;
     animation: animal-slide 15s linear 0s infinite;
 }
+
 .pic1 { 
-    background-image: url(https://i.picsum.photos/id/1020/4288/2848.jpg?hmac=Jo3ofatg0fee3HGOliAIIkcg4KGXC8UOTO1dm5qIIPc) ;
+    background-image: url(https://picsum.photos/id/1024/1200/800) ;
     animation-delay: 0s;
 }
 .pic2 { 
-    background-image: url(https://i.picsum.photos/id/1074/5472/3648.jpg?hmac=w-Fbv9bl0KpEUgZugbsiGk3Y2-LGAuiLZOYsRk0zo4A) ;
+    background-image: url(https://picsum.photos/id/1074/1200/800) ;
     animation-delay: 3s;
 }
 .pic3 { 
-    background-image: url(https://i.picsum.photos/id/1084/4579/3271.jpg?hmac=YblMazviSugJVfZsFPaFI_Vp6lBeQin62qpm8rxHruo) ;
+    background-image: url(https://picsum.photos/id/1084/1200/800) ;
     animation-delay: 6s;
 }
 .pic4 { 
-    background-image: url(https://i.picsum.photos/id/1024/1920/1280.jpg?hmac=-PIpG7j_fRwN8Qtfnsc3M8-kC3yb0XYOBfVzlPSuVII) ;
+    background-image: url(https://picsum.photos/id/1024/1200/800) ;
     animation-delay: 9s;
 }
 .pic5 { 
-    background-image: url(https://i.picsum.photos/id/200/1920/1280.jpg?hmac=-eKjMC8-UrbLMpy1A4OWrK0feVPB3Ka5KNOGibQzpRU) ;
+    background-image: url(https://picsum.photos/id/200/1200/800) ;
     animation-delay: 12s;
 }
 
