@@ -9,11 +9,11 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .section {
-    margin: var(--gutter) 0 60px;
+    margin: var(--gutter-big) 0;
     border: 1px dotted var(--light-back);
 }
 

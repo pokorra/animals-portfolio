@@ -1,12 +1,10 @@
 
 
-.title {
+.main-title {
     z-index: 3;
-    width: 100%;
 }
 
 h1 {
-    text-align: center;
     position: relative;
 }
 h1 span{

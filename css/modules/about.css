@@ -2,12 +2,7 @@
     margin: var(--gutter) 0;    
 }
 
-.about-art-title {
-    width: 100%;
-    text-align: center;
-    position: relative;
-}
-.about-art-title::after {
+.about-title::after {
     position: absolute;
     content: "";
     width: 140px;
@@ -33,7 +28,7 @@
 
 
 @media only screen and (max-width: 650px) {
-    .about-art-title::after {
+    .about-title::after {
         display: none;
     }
     .about-art-paragraphs {

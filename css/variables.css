@@ -4,7 +4,9 @@
     --light-back: rgb(219, 219, 219);
     --warmer-back: rgb(216, 188, 137);
     --half-transparent: rgba(219, 219, 219, .5);
+    --white: rgb(255, 255, 255);
 
     --gutter: 30px;
+    --gutter-big: 70px;
     --font-size: 16px;
 }

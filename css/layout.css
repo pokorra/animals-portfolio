@@ -1,14 +1,14 @@
 .main-container {
     width: 90vw;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: var(--gutter-big) auto;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: var(--gutter) auto;
+    margin: var(--gutter-big) auto;
     width: 90vw;
     z-index: 3;
 }
@@ -21,19 +21,19 @@ header {
     position: relative;
 }
 
-.sec-about {
+.sec-about, .sec-team {
     margin-top: 100px;
 }
 
 
 @media only screen and (max-width: 1100px) {
-    .sec-about {
+    .sec-about, .sec-team {
         margin-top: 50px;
     }
 }
 
 @media only screen and (max-width: 650px) {
-    .sec-about {
+    .sec-about, .sec-team {
         margin-top: 40px;
     }
 }
