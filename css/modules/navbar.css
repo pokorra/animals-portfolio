@@ -8,14 +8,14 @@ nav {
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
-    
+    transition: .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 #menu.hidden {
     transform: translateX(100%);
 }
 #menu.open {
     transform: translateX(0);
-    animation: opacity ease .5s forwards;
+    /* animation: opacity ease .5s forwards; */
 }
 .menu-item {
     margin: 0 10px;
@@ -42,7 +42,7 @@ nav {
     justify-self: end;
     width: 40px;
     height: var(--gutter);
-    background-color: transparent;
+    background-color: #ffffff;
     z-index: 8;
 }
 
@@ -58,7 +58,6 @@ nav {
 
 .show-menu .line-1 {
     transform: rotate(-45deg);
-    /* top: 15px; */
     transform-origin: right top;
 }
 

@@ -1,14 +1,10 @@
 .about-article {
-    /* border: 1px dotted seagreen; */
-    
+    margin: var(--gutter) 0;    
 }
 
 .about-art-title {
     width: 100%;
     text-align: center;
-    letter-spacing: 2px;
-    background-color: var(--half-transparent);
-    padding: 10px;
     position: relative;
 }
 .about-art-title::after {
@@ -20,21 +16,19 @@
     background-color: var(--light-back);
     top: -50px;
     right: 20px;
-
-    
 }
 
 .about-art-paragraphs {
-    width: 80%;
     margin: var(--gutter) auto;
     display: flex;
+    justify-content: space-between;
     flex: 1 0 auto;
 }
 
 .about-art-par {
     margin: var(--gutter) auto;
     padding: 5px 10px;
-    width: 40%;
+    width: 30%;
 }
 
 
@@ -44,10 +38,9 @@
     }
     .about-art-paragraphs {
         flex-direction: column;
-        /* margin: var() auto; */
     }
     .about-art-par {
-        width: 80%;
+        width: 100%;
         margin: 10px auto;
     }
 }

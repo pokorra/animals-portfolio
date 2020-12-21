@@ -3,12 +3,9 @@
 .title {
     z-index: 3;
     width: 100%;
-    background-color: var(--half-transparent);
-    padding: 10px;
 }
 
 h1 {
-    letter-spacing: 2px;
     text-align: center;
     position: relative;
 }

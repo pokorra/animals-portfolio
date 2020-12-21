@@ -9,3 +9,8 @@
     visibility: hidden;
     animation: showDesc 1s linear forwards;
 }
+
+@keyframes showDesc {
+    0%, 60% {visibility: hidden; }
+    100% { visibility: visible; }
+}
