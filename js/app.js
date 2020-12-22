@@ -32,3 +32,20 @@ menu.addEventListener("click", e => {
         noScrolling();
     }
 })
+
+// who we are section - extending pictures
+const memberContainer = document.querySelectorAll('.team-member');
+
+function toggleExtend(){
+    this.classList.toggle('extended');
+}
+function toggleActive(e){
+    console.log(e);
+    if (e.propertyName.includes('flex-grow')) {
+        this.classList.toggle('open-active')
+    };
+}
+
+memberContainer.forEach(member => member.addEventListener('click', toggleExtend));
+
+memberContainer.forEach(member => member.addEventListener('transitionend', toggleActive));
