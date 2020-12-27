@@ -10,26 +10,37 @@
     animation: showDesc 1s linear forwards;
 }
 
-@keyframes showDesc {
-    0%, 60% {visibility: hidden; }
-    100% { visibility: visible; }
-}
+
 
 /* team section - members images extending */
 .extended {
     flex: 5;
 }
 .extended img {
-    width: 100%;
     opacity: 1;
 }
 
-.team-member.open-active p:first-of-type ,
-.team-member.open-active p:last-of-type  {
+.team-member.open-active div:first-of-type,
+.team-member.open-active div:last-of-type {
     transform: translateY(0);
+}
+.team-member.open-active div p {
+    display: block;
 }
 .team-member.open-active h2 {
     color: var(--light-back);
-    text-shadow: 2px 2px 2px var(--font-color),
-                -2px -2px 2px var(--font-color);
+    font-size: 26px;
+    text-shadow: 3px 3px 3px var(--font-color),
+                -3px -3px 3px var(--font-color);
+}
+
+
+@keyframes showDesc {
+    0%, 60% {visibility: hidden; }
+    100% { visibility: visible; }
+}
+
+@keyframes words {
+    0%, 60% {display: none;}
+    100% {display: block;}
 }

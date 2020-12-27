@@ -14,7 +14,7 @@ body {
 
 .section {
     margin: var(--gutter-big) 0;
-    border: 1px dotted var(--light-back);
+    /* border: 1px dotted var(--light-back); */
 }
 
 a {
