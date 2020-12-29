@@ -33,6 +33,7 @@ button:hover {
 h1, h2 {
     font-family: 'Abril Fatface', cursive;
     font-size: 32px;
+    line-height: 32px;
     letter-spacing: 2px;
     background-color: var(--half-transparent);
     padding: 10px;
