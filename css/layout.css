@@ -1,7 +1,7 @@
 .main-container {
     width: 90vw;
     max-width: 1100px;
-    margin: var(--gutter-big) auto;
+    margin: var(--gutter-big) auto var(--gutter);
 }
 
 header {
@@ -28,6 +28,17 @@ header {
     height: 80vh;
 }
 
+.contact-sec {
+    min-height: 50vh;
+    background-color: var(--font-color);
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
 @media only screen and (max-width: 1100px) {
     .sec-about, .sec-team {
         margin-top: 50px;
@@ -43,5 +54,9 @@ header {
     }
     .sec-team {
         height: auto;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
     }
 }

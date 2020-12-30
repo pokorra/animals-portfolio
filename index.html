@@ -6,9 +6,9 @@
     <meta name="author" content="Patrycja Pokora">
     <title>Animal Collective</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">     <link
-      rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -24,13 +24,13 @@
                 <li class="menu-item underline">
                     <a href="#">home</a>
                 </li>
-                <li class="menu-item">
+                <li id="to-about" class="menu-item menu-about">
                     <a href="#about">about</a>
                 </li>
-                <li class="menu-item">
+                <li id="to-team" class="menu-item menu-team">
                     <a href="#team">team</a>
                 </li>
-                <li class="menu-item">
+                <li id="to-contact" class="menu-item menu-contact">
                     <a href="#contact">contact</a>
                 </li>
             </ul>
@@ -38,9 +38,6 @@
                 <span class="line line-1"></span> 
                 <span class="line line-2"></span>
                 <span class="line line-3"></span>
-            </a>
-            <a href="#site-top" class="to-the-top">
-                <i class="fas fa-arrow-alt-circle-up"></i>
             </a>
            </nav>
         </header>
@@ -57,6 +54,7 @@
             </ul>
         </main>
         <section id="about" class="section sec-about about">
+            <button id="to-top"> <i  class="fas fa-arrow-alt-circle-up to-top"></i></button>
             <article class="about-article">
                 <div class="title about-title">
                     <h2>what do we do?</h2>
@@ -181,12 +179,12 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="section contact-sec">
+        <section id="contact"  class="section contact-sec">
             <div class="title contact-title">
                 <h2>contact us</h2>
             </div>
             <div class="form-container">
-                <form class="contact-item" action="">
+                <form class="form" action="">
                     <div class="form-name form-item">
                         <label for="fname">Enter your name</label>
                         <input type="text" id="fname" name="name" required>
@@ -201,13 +199,11 @@
                     </div>
                     <button type="submit" class="form-sbmt"> submit </button>
                 </form>
-                <div class="contact-intro contact-item">
+                <div class="contact-datas">
                     <h2>animal collective</h2>
-                    <p class="contact-data">Mad Dog Lane</p>
-                    <p class="contact-data">Hook, Goole, DN14 5SH</p>
-                    <p class="contact-data">England</p>
-                    <p class="contact-data">(00)123-456-789</p>
-                    <p class="contact-data">contact@animalcollective.com</p>
+                    <p class="contact-data"> <i class="far fa-envelope"></i> Mad Dog Lane, Hok, DN145SH, England</p>
+                    <p class="contact-data"> <i class="fas fa-phone"></i> (00)123-456-789</p>
+                    <p class="contact-data"> <i class="fas fa-at"></i> contact@animalcollective.com</p>
                 </div>
             </div>
 

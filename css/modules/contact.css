@@ -1,77 +1,32 @@
-.contact-sec {
-    /* display: flex; */
-    min-height: 50vh;
-    background-color: var(--font-color);
-    
-}
 
-.form-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-}
-
-.contact-item {
-    margin: var(--gutter);
-    padding: 10px;
-}
-
-form {
-    position: relative;
+.contact-datas {
     color: var(--white);
-}
-
-.contact-intro {
-    border: 1px dotted green;
-    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: var(--gutter);
 }
 .contact-data {
     color: inherit;
+    padding: 5px 0 0 10px;
 }
-
-.form-item {
-    position: relative;
-    margin: 10px;
-    height: 5vh;
-}
-.form-item:last-of-type {
-    min-height: 15vh;
-}
-
-.form-item label {
-    position: absolute;
-    z-index: 2;
-    cursor: text;
-}
-.form-item input,
-.form-item textarea {
-    background-color: var(--half-transparent);
-    border: none;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    width: 100%;
-}
-.form-sbmt {
-    background-color: var(--white);
-    border: none;
-    margin: 10px;
-    text-align: center;
-    padding: 10px var(--gutter);
-    cursor: pointer;
-    transition: background .3s, box-shadow .5s;
-}
-.form-sbmt:hover {
-    background-color: var(--half-transparent);
-    box-shadow: 2px 2px 5px var(--white);
-}
-
-@media only screen and (max-width: 1100px) {
-    .form-item {
-        margin: 10px 0;
-    }
+.contact-data i {
+    color: var(--white);
+    padding-right: 10px;
 }
 
 @media only screen and (max-width: 650px) {
-
+    
+    .contact-datas h2 {
+        margin: var(--gutter) 0;
+    }
+    .contact-data:first-of-type {
+        margin-top: 10px;
+    }
+    .contact-data {
+        padding: 10px 0 0 10px;
+    }
+    .contact-data i {
+        padding-right: 5px;
+    }
 }

@@ -1,3 +1,14 @@
+function Smooth(from, to){
+    from.addEventListener('click', ()=>{
+        to.scrollIntoView({behavior: "smooth"});
+        console.log(`${from} this one to ${to}`);
+    })
+};
+
+Smooth(document.querySelector('#to-contact'), document.querySelector('#contact'));
+Smooth(document.querySelector('#to-team'), document.querySelector('#team'));
+Smooth(document.querySelector('#to-about'), document.querySelector('#about'));
+Smooth(document.querySelector('#to-top'), document.querySelector('#site-top'));
 
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("menu");
@@ -47,5 +58,4 @@ function toggleActive(e){
 }
 
 memberContainer.forEach(member => member.addEventListener('click', toggleExtend));
-
 memberContainer.forEach(member => member.addEventListener('transitionend', toggleActive));

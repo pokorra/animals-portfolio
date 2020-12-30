@@ -1,0 +1,54 @@
+.form {
+    margin: var(--gutter);
+    padding: 10px;
+    color: var(--white);
+}
+
+.form-item {
+    position: relative;
+    margin: 10px;
+    height: 5vh;
+}
+.form-item:last-of-type {
+    min-height: 15vh;
+}
+
+.form-item label {
+    position: absolute;
+    z-index: 2;
+    cursor: text;
+}
+.form-item input,
+.form-item textarea {
+    background-color: var(--half-transparent);
+    border: none;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.form-sbmt {
+    background-color: var(--white);
+    border: none;
+    margin: 10px;
+    text-align: center;
+    padding: 10px var(--gutter);
+    cursor: pointer;
+    transition: background .5s box-shadow .2s;
+}
+.form-sbmt:hover {
+    background-color: var(--half-transparent);
+    box-shadow: 2px 2px 5px var(--white);
+}
+
+@media only screen and (max-width: 1100px) {
+    .form-item {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .form {
+        margin-left: 10px;
+    }
+}

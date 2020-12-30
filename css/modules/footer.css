@@ -18,7 +18,15 @@
 .git-link:hover {
     text-shadow: 1px 1px 2px var(--second-color),
                 -1px -1px 2px var(--second-color);
-                background-color: var(--half-transparent);
-                /* 2px 2px 4px var(--warmer-back), */
-                /* -2px -2px 4px var(--warmer-back); */
+    background-color: var(--half-transparent);
+
+}
+
+@media only screen and (max-width: 650px) {
+    .footer {
+        font-size: 12px;
+    }
+    .git-link {
+        padding: 2px 3x 2px 0;
+    }
 }

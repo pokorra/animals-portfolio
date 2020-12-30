@@ -7,14 +7,15 @@
     font-size: var(--font-size);
     line-height: 22px;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--white);
 }
 
 .section {
     margin: var(--gutter-big) 0;
-    /* border: 1px dotted var(--light-back); */
 }
 
 a {

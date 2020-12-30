@@ -15,7 +15,6 @@ nav {
 }
 #menu.open {
     transform: translateX(0);
-    /* animation: opacity ease .5s forwards; */
 }
 .menu-item {
     margin: 0 10px;
@@ -70,11 +69,12 @@ nav {
     transform-origin: right bottom;
 }
 
-/* for now */
 .to-the-top {
-    display: none;
+    
 }
-
+.to-the-top i {
+    font-size: 20px;
+}
 
 @keyframes opacity {
     from {opacity: 0;}
