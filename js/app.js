@@ -1,7 +1,6 @@
 function Smooth(from, to){
     from.addEventListener('click', ()=>{
         to.scrollIntoView({behavior: "smooth"});
-        console.log(`${from} this one to ${to}`);
     })
 };
 
@@ -44,6 +43,21 @@ menu.addEventListener("click", e => {
     }
 })
 
+//up arrow showing up
+const main = document.querySelector("main");
+const upBtn = document.querySelector('#to-top')
+window.addEventListener("scroll", showUpArrow);
+
+function showUpArrow() {
+  if (window.scrollY > (main.offsetHeight)) {
+    upBtn.classList.remove("hidden");
+  } else {
+    upBtn.classList.add("hidden");
+  }
+}
+
+
+
 // who we are section - extending pictures
 const memberContainer = document.querySelectorAll('.team-member');
 
@@ -51,7 +65,6 @@ function toggleExtend(){
     this.classList.toggle('extended');
 }
 function toggleActive(e){
-    console.log(e);
     if (e.propertyName.includes('flex-grow')) {
         this.classList.toggle('open-active')
     };
@@ -59,3 +72,53 @@ function toggleActive(e){
 
 memberContainer.forEach(member => member.addEventListener('click', toggleExtend));
 memberContainer.forEach(member => member.addEventListener('transitionend', toggleActive));
+
+//form - hiding label on typing
+const form = document.querySelector('form');
+// form.addEventListener('click', labelOut);
+// form.addEventListener('keyup', formOn);
+
+const inputs = document.querySelectorAll('.intext');
+// inputs.forEach(input => input.addEventListener('mouseout', ifMouseOut));
+
+form.addEventListener('keyup', hideLabello);
+
+function hideLabello(e){
+    // const key = e.key;
+    if (e.key === "Backspace") {
+        if (!e.target.value) {
+            console.log('usuwam labelkę');
+            e.target.previousElementSibling.classList.remove("label-off")}
+    } else {
+        console.log('dodaję labelkę');
+        e.target.previousElementSibling.classList.add("label-off");
+    }
+}
+
+
+function ifMouseOut(e){
+    if (!e.target.value) {
+        e.target.previousElementSibling.classList.remove("label-off");
+    // } else {
+        // console.log('było coś');
+    }  
+}
+
+function labelOut(e){
+    if (e.target.classList.contains("label")) {
+        // console.log('akapulko zawijam labelkę');
+        e.target.classList.add("label-off");
+    }
+}
+
+function formOn(e){
+    console.log(e.key);
+    if ((e.target.value !== "") && (!e.target.previousElementSibling.classList.contains("label-off"))) {
+        e.target.previousElementSibling.classList.add("label-off");
+        // console.log(e.target.value);
+    } else if (e.target.value === "") {
+        e.target.previousElementSibling.classList.remove("label-off");
+        // console.log(e.target.value, "pusto było");        
+    }
+}
+

@@ -54,7 +54,7 @@
             </ul>
         </main>
         <section id="about" class="section sec-about about">
-            <button id="to-top"> <i  class="fas fa-arrow-alt-circle-up to-top"></i></button>
+            <button id="to-top" class="hidden"> <a href="#site-top"><i class="fas fa-arrow-alt-circle-up to-top"></i> </a> </i></button>
             <article class="about-article">
                 <div class="title about-title">
                     <h2>what do we do?</h2>
@@ -186,16 +186,16 @@
             <div class="form-container">
                 <form class="form" action="">
                     <div class="form-name form-item">
-                        <label for="fname">Enter your name</label>
-                        <input type="text" id="fname" name="name" required>
+                        <label for="fname" class="label">Enter your name</label>
+                        <input type="text" id="fname" name="name" class="intext" required>
                     </div>
                     <div class="form-email form-item">
-                        <label for="femail">Enter your email</label>
-                        <input type="email" id="femail" name="email" required>
+                        <label for="femail" class="label">Enter your email</label>
+                        <input type="email" id="femail" name="email" class="intext" required>
                     </div>
                     <div class="form-msg form-item">
-                        <label for="fmsg">Your message</label>
-                        <textarea type="text" id="fmsg" name="msg" rows="6" required> </textarea>
+                        <label for="fmsg" class="label">Your message</label>
+                        <textarea type="text" id="fmsg" name="msg" rows="6" class="intext" required> </textarea>
                     </div>
                     <button type="submit" class="form-sbmt"> submit </button>
                 </form>

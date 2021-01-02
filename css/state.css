@@ -3,14 +3,16 @@
     position: fixed;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 /* unhiding text inside of grid elements */
 .unhide {
     display: block;
     visibility: hidden;
     animation: showDesc 1s linear forwards;
 }
-
-
 
 /* team section - members images extending */
 .extended {
@@ -34,6 +36,17 @@
                 -3px -3px 3px var(--font-color);
 }
 
+.form-item label.label-off {
+    transition: .4s;
+    right: 0;
+    width: 30%;
+    height: 50%;
+    text-align: right;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--half-transparent);
+    border: 1px dotted blue;
+}
 
 @keyframes showDesc {
     0%, 60% {visibility: hidden; }
