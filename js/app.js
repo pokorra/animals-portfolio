@@ -75,50 +75,13 @@ memberContainer.forEach(member => member.addEventListener('transitionend', toggl
 
 //form - hiding label on typing
 const form = document.querySelector('form');
-// form.addEventListener('click', labelOut);
-// form.addEventListener('keyup', formOn);
 
-const inputs = document.querySelectorAll('.intext');
-// inputs.forEach(input => input.addEventListener('mouseout', ifMouseOut));
-
-form.addEventListener('keyup', hideLabello);
-
-function hideLabello(e){
-    // const key = e.key;
+form.addEventListener('keyup', labelOut);
+function labelOut(e){
     if (e.key === "Backspace") {
         if (!e.target.value) {
-            console.log('usuwam labelkę');
             e.target.previousElementSibling.classList.remove("label-off")}
     } else {
-        console.log('dodaję labelkę');
         e.target.previousElementSibling.classList.add("label-off");
     }
 }
-
-
-function ifMouseOut(e){
-    if (!e.target.value) {
-        e.target.previousElementSibling.classList.remove("label-off");
-    // } else {
-        // console.log('było coś');
-    }  
-}
-
-function labelOut(e){
-    if (e.target.classList.contains("label")) {
-        // console.log('akapulko zawijam labelkę');
-        e.target.classList.add("label-off");
-    }
-}
-
-function formOn(e){
-    console.log(e.key);
-    if ((e.target.value !== "") && (!e.target.previousElementSibling.classList.contains("label-off"))) {
-        e.target.previousElementSibling.classList.add("label-off");
-        // console.log(e.target.value);
-    } else if (e.target.value === "") {
-        e.target.previousElementSibling.classList.remove("label-off");
-        // console.log(e.target.value, "pusto było");        
-    }
-}
-

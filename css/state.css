@@ -45,7 +45,6 @@
     font-size: 14px;
     font-style: italic;
     color: var(--half-transparent);
-    border: 1px dotted blue;
 }
 
 @keyframes showDesc {
