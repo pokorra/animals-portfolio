@@ -47,6 +47,7 @@
     color: var(--half-transparent);
 }
 
+
 @keyframes showDesc {
     0%, 60% {visibility: hidden; }
     100% { visibility: visible; }
@@ -55,4 +56,19 @@
 @keyframes words {
     0%, 60% {display: none;}
     100% {display: block;}
+}
+
+@media only screen and (max-width: 1100px) {
+    .form-item label.label-off {
+        width: 40%;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .form-item label {
+        font-size: 14px;
+    }
+    .form-item label.label-off {
+        font-size: 10px;
+    }
 }

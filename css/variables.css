@@ -1,12 +1,17 @@
-:root {
-    --font-color: rgb(56, 56, 56);
+body {
     --second-color: rgb(130, 131, 124);
-    --light-back: rgb(219, 219, 219);
-    --warmer-back: rgb(216, 188, 137);
-    --half-transparent: rgba(219, 219, 219, .5);
-    --white: rgb(255, 255, 255);
-
     --gutter: 30px;
     --gutter-big: 70px;
     --font-size: 16px;
+
+    --font-color: rgb(56, 56, 56);
+    --light-back: rgb(219, 219, 219);
+    --half-transparent: rgba(219, 219, 219, .5);
+    --white: rgb(255, 255, 255);
+}
+.dark {
+    --light-back: rgb(100, 100, 100);
+    --font-color: rgb(219, 219, 219);
+    --white: rgb(56, 56, 56);
+    --half-transparent: rgba(100, 100, 100, .5);
 }

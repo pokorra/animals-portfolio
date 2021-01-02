@@ -1,17 +1,29 @@
+//dark mode starting
+const darkBtn = document.querySelector('.toggle-mode');
+const body = document.querySelector('body');
+darkBtn.addEventListener('click', function(){
+    body.classList.toggle('dark');
+    darkBtn.classList.toggle('clicked');
+
+    if (darkBtn.classList.contains('clicked')){
+        darkBtn.innerHTML = "light mode";
+    } else { darkBtn.innerHTML = "dark mode";}
+})
+
+//smooth scrolling
 function Smooth(from, to){
     from.addEventListener('click', ()=>{
         to.scrollIntoView({behavior: "smooth"});
     })
 };
-
 Smooth(document.querySelector('#to-contact'), document.querySelector('#contact'));
 Smooth(document.querySelector('#to-team'), document.querySelector('#team'));
 Smooth(document.querySelector('#to-about'), document.querySelector('#about'));
 Smooth(document.querySelector('#to-top'), document.querySelector('#site-top'));
 
+//hamburger menu toggle
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("menu");
-
 hamburger.addEventListener("click", ()=>{
     if (menu.className === "hidden") {
         menu.className = menu.className.replace("hidden", "open");
@@ -78,9 +90,8 @@ const form = document.querySelector('form');
 
 form.addEventListener('keyup', labelOut);
 function labelOut(e){
-    if (e.key === "Backspace") {
         if (!e.target.value) {
-            e.target.previousElementSibling.classList.remove("label-off")}
+            e.target.previousElementSibling.classList.remove("label-off")
     } else {
         e.target.previousElementSibling.classList.add("label-off");
     }

@@ -6,6 +6,7 @@
     color: var(--font-color);
     font-size: var(--font-size);
     line-height: 22px;
+    transition: .3s;
 }
 html {
     scroll-behavior: smooth;
