@@ -1,12 +1,23 @@
-
-
 .main-title {
     z-index: 3;
+}
+
+.main-title::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 120px;
+    top: -30px;
+    right: 20%;
+    border-radius: 50%;
+    background-color: var(--blue);
+    z-index: -1;
 }
 
 h1 {
     position: relative;
 }
+
 h1 span{
     padding: 0 var(--gutter);
 }
@@ -14,14 +25,12 @@ h1 span::before {
     content: "";
     width: 165px;
     height: 165px;
-    top: -65px;
+    top: -55px;
     position: absolute;
     background-color: var(--light-back);
     border-radius: 50%;
     z-index: -1;
     box-sizing: border-box;
-    box-shadow: 1px 1px 0 6px var(--light-back),
-                -1px -1px 0 6px var(--light-back);
 }
 
 /* slider */
@@ -76,6 +85,11 @@ h1 span::before {
    }
 }
 
+@media only screen and (max-width: 1100px) {
+    .main-title::before {
+        right: 5%;
+    }
+}
 
 @media only screen and (max-width: 650px) {
     .title {

@@ -5,6 +5,27 @@
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: var(--gutter);
+    position: relative;
+}
+.contact-datas::before {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: var(--light-back);
+    top: 2vh;
+    right: 150px;
+}
+.contact-datas::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    top: 7vh;
+    right: 20px;
 }
 .contact-data {
     color: inherit;
@@ -16,7 +37,10 @@
 }
 
 @media only screen and (max-width: 650px) {
-    
+    .contact-datas::before,
+    .contact-datas::after {
+        display: none;
+    }
     .contact-datas h2 {
         margin: var(--gutter) 0;
     }

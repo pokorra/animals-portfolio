@@ -1,9 +1,8 @@
 body {
-    --second-color: rgb(130, 131, 124);
     --gutter: 30px;
     --gutter-big: 70px;
     --font-size: 16px;
-
+    --blue: rgb(155, 200, 160);
     --font-color: rgb(56, 56, 56);
     --light-back: rgb(219, 219, 219);
     --half-transparent: rgba(219, 219, 219, .5);

@@ -1,8 +1,29 @@
-/* after/before 
-.team-title */
 .team-title {
     margin: var(--gutter-big) 0;
 }
+
+.team-title::before {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: var(--light-back);
+    top: -50px;
+    left: 8vw;
+}
+.team-title::after {
+    position: absolute;
+    content: "";
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    top: -35px;
+    left: 30vw;
+    z-index: -1;
+}
+
 
 .team-introduction {
     display: grid;
@@ -48,7 +69,7 @@
 
 .team-member img {
     position: absolute;
-    height: 100%;
+    height: 110%;
     z-index: -1;
     vertical-align: middle;
     opacity: .7;
@@ -102,10 +123,17 @@
     .team-introduction {
        grid-template-columns: 30% 1fr;
     }
+    .team-member img {
+        height: 100%;
+    }
     
 }
 
 @media only screen and (max-width: 650px) {
+    .team-title::before,
+    .team-title::after {
+        display: none;
+    }
     .team-introduction {
         display: flex;
         flex-direction: column;
@@ -121,6 +149,7 @@
     }
     .team-members {
         height: 60vh;
+        min-height: 350px;
     }
     .team-member {
         overflow: hidden;
