@@ -1,26 +1,47 @@
-.toggle-mode {
+.dark-mode-container {
     position: absolute;
-    width: 55px;
     right: 2vw;
     top: 2vh;
-    padding: 2px;
+    width: 50px;
+    padding: 5px 0 3px;
+    border: 4px double var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.dark-mode-container:hover {
+    background-color: var(--half-transparent);
+}
+.toggle-mode-p {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
-    border: 2px solid var(--blue);
-    border-radius: 8px;
+    /* border: 1px dottesd blue; */
+}
+.toggle-mode {
+    font-size: 22px;
     cursor: pointer;
+    /* border: 1px dotted pink; */
 }
 
 .clicked {
-    box-shadow: 2px 2px 4px rgb(255, 255, 0), -2px -2px 5px rgb(255, 255, 0);
-    border: 2px solid #ffffff;
+    text-shadow: 
+        0 0 20px rgb(255, 255, 75),
+        0 0 10px rgb(255, 255, 0), 
+        0 0 15px rgb(255, 255, 0),
+        0 0 15px rgb(240, 240, 0);
+    /* border: 2px solid #ffffff; */
 }
 
 @media only screen and (max-width: 650px) {
     .toggle-mode {
         width: 45px;
+        
+    }
+    .toggle-mode p {
         font-size: 10px;
         line-height: 11px;
     }

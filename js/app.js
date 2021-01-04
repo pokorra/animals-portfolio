@@ -10,13 +10,14 @@ window.addEventListener('load', ()=>{
 
 //dark mode starting
 const body = document.querySelector('body');
-const darkBtn = document.querySelector('.toggle-mode');
+const darkBtn = document.querySelector('.dark-mode-container');
+const bulb = document.querySelector('.toggle-mode');
 darkBtn.addEventListener('click', function(){
     body.classList.toggle('dark');
-    darkBtn.classList.toggle('clicked');
-    if (darkBtn.classList.contains('clicked')){
-        darkBtn.innerHTML = "light mode";
-    } else { darkBtn.innerHTML = "dark mode";}
+    bulb.classList.toggle('clicked');
+    // if (darkBtn.classList.contains('clicked')){
+        // darkBtn.innerHTML = "light mode";
+    // } else { darkBtn.innerHTML = "dark mode";}
 })
 
 //smooth scrolling
