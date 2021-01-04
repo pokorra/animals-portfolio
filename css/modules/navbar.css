@@ -78,7 +78,6 @@ nav {
     to {opacity: 1;}
 }
 
-
 @media only screen and (max-width: 650px) {
     #menu {
         transition: none;
