@@ -15,6 +15,11 @@ const bulb = document.querySelector('.toggle-mode');
 darkBtn.addEventListener('click', function(){
     body.classList.toggle('dark');
     bulb.classList.toggle('clicked');
+    if (darkBtn.lastElementChild.innerHTML === 'dark mode') {
+        darkBtn.lastElementChild.innerHTML = 'light mode';
+    } else {
+        darkBtn.lastElementChild.innerHTML = 'dark mode';
+    }
 })
 
 //hamburger menu toggle
